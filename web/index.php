@@ -18,7 +18,7 @@ function getRequestParam($name, $default) {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <title>areabambini.ru Детские игровые площадки</title>
+    <title>little-star.su Детские игровые площадки</title>
     <!--    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
     <style type="text/css">
         div, html, body, span, object, iframe, h1, h2, h3, h4, h5, h6, a, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
@@ -163,7 +163,7 @@ function getRequestParam($name, $default) {
     <div align="center" class="content_back">
         <div style="width: 100%; height: 100%; min-height: 500px">
             <?php
-/*            switch(getRequestParam("page", null)) {
+            switch(getRequestParam("page", null)) {
                 case "news":
                     require_once "news.php";
                     break;
@@ -191,8 +191,7 @@ function getRequestParam($name, $default) {
                     require_once "main.php";
                     break;
             }
-            */?>
-            Areabambini
+            ?>
 
         </div>
     </div>

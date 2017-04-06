@@ -1,148 +1,32 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <link rel="SHORTCUT ICON" href="static/favicon.ico" type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="icon" sizes="196x196" href="apple-touch-icon.png">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <title>areabambini.ru Детская игровая площадка</title>
-    <!--    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
-    <style type="text/css">
-        div, html, body, span, object, iframe, h1, h2, h3, h4, h5, h6, a, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            outline: 0;
-            font-size: 100%;
-            vertical-align: baseline;
-            border-spacing: 0;
-            /*background: transparent;*/
-        }
-        html {
-            height: 100%;
-            background-image: url("bg3.gif");
-            background-repeat: repeat;
-        }
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
+<!doctype html>
+<html>
+       <head>
+              <title>parking-manager</title>
+              <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+              <link href="styles.css" rel="stylesheet" type="text/css">
+              <script src="soundmanager2-setup.js"></script>
+  			  <script src="soundmanager2-jsmin.js"></script>
+       </head>
 
-        .button_container {
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;/*for internet explorer*/
-            background-image: url("static/new/top_panel.png");
-            background-repeat: repeat-x;
-        }
-        .btn {
-            text-decoration: none;
-        }
-        .selected {
-            display: none;
-        }
-        .btn:hover .selected {
-            display: inline;
-        }
-        .btn:focus .selected {
-            display: inline;
-        }
-        .btn:hover .not_selected {
-            display: none;
-        }
-        .btn:focus .not_selected {
-            display: none;
-        }
-        ul {
-            list-style-image: url('static/list_star.png');
-        }
-        h1 {
-            font-size: 150%;
-            color: #1a1c80;
-        }
-        body {
-            font-size: 120%;
-        }
+       <body>
+              <a class="superdev" href="javascript:%7B%20window.__gwt_bookmarklet_params%20%3D%20%7B'server_url'%3A'http%3A%2F%2Flocalhost%3A9876%2F'%7D%3B%20var%20s%20%3D%20document.createElement('script')%3B%20s.src%20%3D%20'http%3A%2F%2Flocalhost%3A9876%2Fdev_mode_on.js'%3B%20void(document.getElementsByTagName('head')%5B0%5D.appendChild(s))%3B%7D">&#8635;</a>
+              <div align="center" id="embed-html"></div>
+              <script type="text/javascript" src="html/html.nocache.js"></script>
+       </body>
 
-        .content_back {
-            width:85%;
-            margin-left: auto;
-            margin-right: auto;
+       <script>
+              function handleMouseDown(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+                evt.target.style.cursor = 'default';
+              }
 
-            border: 50px solid transparent;
-            -webkit-border-image: url(content_bg.png);
-            -webkit-border-image-repeat:round;
-            -webkit-border-image-slice:100 100 100 100 fill;
-            -o-border-image: url(content_bg.png);
-            -o-border-image-repeat:round;
-            -o-border-image-slice:100 100 100 100 fill;
-            border-image: url(content_bg.png);
-            border-image-repeat:round;
-            border-image-slice:100 100 100 100 fill;
-        }
-        .top td:nth-child(1), {
-            width: 31.5%;
-        }
-        .top td:nth-child(2) {
-            width: 68.5%;
-        }
-        .phone :link { color:#ffffff; }
-        .phone :visited { color:#ffffff; }
-        .phone :hover { color:#ffffff; }
-        .phone :active { color:#ffffff; }
-    </style>
-    <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
-    <!--    https://vk.com/dev/Community?height=400&link=http%3A%2F%2Fvk.com%2Fpublic20003922&mode=0&oid=-20003922&wide=&width=220-->
-    <script>
-
-    </script>
-</head>
-<body>
-<div style="background-image: url('static/new/middle.png'); background-size: contain;">
-    <div align="center" class="content_back">
-        <div style="width: 80%; height: 100%; min-height: 300px; color: #5a0663">
-            <img src="bambik.png" style="width: 40%;"/>
-            <br/>
-            Дорогие друзья!
-            <br/>
-            На 3 этаже ТЦ Columbus
-            <br/>
-            как по волшебству появился сказочный лес, в котором живет добрый и пушистый Бамбик.
-            <br/>
-            Но ему очень одиноко без друзей. Поэтому он зовет Вас к себе в гости. Он надеется, что Вам понравится у него дома. Приходите!
-            <br/>
-            Он Вас очень-очень ждет!
-            <br/>
-            <br/>
-            <img src="tree.png" style="width: 20%"/>
-            <br/>
-            <!--<h1>Columbus</h1>-->
-            Наша детская площадка расположена на 3 этаже ТЦ Columbus (г. Москва, ул. Кировоградская, д. 13а
-            <br/>
-            <img src="colubmus.jpg" style="width: 40%"/>
-            <br/>
-            <h1>Сотрудничество</h1>
-            Мы рады любому сотрудничеству, пишите нам Ваши предложения на нашу почту areabambini@mail.ru или&nbsp;звоните&nbsp;по&nbsp;тел.&nbsp;+7(926)&nbsp;525-62-95.
-            <h1>Контакты</h1>
-            e-mail areabambini@mail.ru
-            <br/>
-            tel: +7 (926) 525-62-95
-            <br/>
-            Instagram: areabambini.ru
-            <br/>
-            <img src="1.jpg" style="width: 32.1%"/>
-            <img src="2.jpg" style="width: 56.9%"/>
-            <br/>
-            <img src="3.jpg" style="width: 45%"/>
-            <img src="4.jpg" style="width: 45%"/>
-            <img src="5.jpg" style="width: 45%"/>
-            <img src="6.jpg" style="width: 45%"/>
-        </div>
-    </div>
-</div>
-
-</body>
+              function handleMouseUp(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+                evt.target.style.cursor = '';
+              }
+              document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+              document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+       </script>
 </html>

@@ -95,9 +95,16 @@ barrier-open
   orig: 67, 72
   offset: 0, 0
   index: -1
+friend
+  rotate: false
+  xy: 1255, 305
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
 glow
   rotate: false
-  xy: 1819, 609
+  xy: 1841, 1069
   size: 42, 42
   orig: 42, 42
   offset: 0, 0
@@ -111,14 +118,14 @@ glowred
   index: -1
 greenpath
   rotate: false
-  xy: 1841, 1087
+  xy: 1515, 409
   size: 40, 24
   orig: 40, 24
   offset: 0, 0
   index: -1
 roadsign
   rotate: false
-  xy: 1255, 305
+  xy: 1385, 305
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
@@ -132,14 +139,14 @@ steeringline
   index: -1
 tire
   rotate: false
-  xy: 1782, 518
+  xy: 864, 271
   size: 24, 70
   orig: 24, 70
   offset: 0, 0
   index: -1
 trashcan
   rotate: false
-  xy: 1385, 323
+  xy: 1819, 541
   size: 126, 110
   orig: 126, 110
   offset: 0, 0
